@@ -37,7 +37,7 @@ const projectsData = [
     image: "https://picsum.photos/seed/ai2/800/450?blur=2",
     tags: ["Python", "PyTorch", "FastAPI", "React"],
     link: "https://example.com/visionary-data",
-    github: "https://github.com",
+    github: "https://github.com/Jhin2003/FSLEARN",
   },
   {
     id: 3,
