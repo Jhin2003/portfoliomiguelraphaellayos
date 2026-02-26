@@ -439,14 +439,14 @@ export default function App() {
               <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-6 rounded-2xl">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
                   <h3 className="text-lg font-bold text-white">
-                    Senior AI Engineer
+                   
                   </h3>
                   <span className="text-xs font-mono text-zinc-500">
                     2023 - Present
                   </span>
                 </div>
                 <div className="text-blue-400 text-sm font-medium mb-4">
-                  TechCorp Inc.
+                 
                 </div>
                 <p className="text-sm text-zinc-400 leading-relaxed">
                   Leading the development of internal LLM tools. Architected a
@@ -464,14 +464,14 @@ export default function App() {
               <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-6 rounded-2xl opacity-80 hover:opacity-100 transition-opacity">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
                   <h3 className="text-lg font-bold text-white">
-                    Full Stack Developer
+                
                   </h3>
                   <span className="text-xs font-mono text-zinc-500">
                     2021 - 2023
                   </span>
                 </div>
                 <div className="text-zinc-300 text-sm font-medium mb-4">
-                  StartupX
+                
                 </div>
                 <p className="text-sm text-zinc-400 leading-relaxed">
                   Built scalable web applications using React and Node.js.
@@ -495,7 +495,7 @@ export default function App() {
                   </span>
                 </div>
                 <div className="text-zinc-300 text-sm font-medium mb-4">
-                  Agency Studio
+                 
                 </div>
                 <p className="text-sm text-zinc-400 leading-relaxed">
                   Developed high-performance marketing sites and interactive web
