@@ -64,11 +64,20 @@ const researchData = [
   },
   {
     id: 2,
-    title: "FSLEARN: Fine-Tuned Vision Models for Unstructured Data",
+    title: "Statistical Analysis of Personal Dota 2 Match_Performance",
     venue: "Machine Learning Journal",
     date: "2023",
     desc: "Proposed an automated pipeline for extracting complex layouts and handwritten notes from unstructured documents using optimized vision transformers.",
     link: "#"
+  },
+
+  {
+    id: 3,
+    title: "Deep Learning-Based Recognition and Detection of the Filipino Sign Language Alphabet",
+    venue: "Machine Learning Journal",
+    date: "2023",
+    desc: "Proposed an automated pipeline for extracting complex layouts and handwritten notes from unstructured documents using optimized vision transformers.",
+    link: "https://github.com/Jhin2003/research_papers/blob/main/Deep%20Learning-Based%20Recognition%20and%20Detection%20of%20the%20Filipino%20Sign%20Language%20Alphabet.pdf"
   }
 ];
 
