@@ -113,18 +113,18 @@ export default function App() {
 
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 glass border-b-0 border-white/5">
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="font-mono text-sm font-medium tracking-wider"
+            className="font-mono text-xs sm:text-sm font-medium tracking-wider"
           >
             <span className="text-blue-400">~/</span>portfolio
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="flex gap-8 text-sm font-medium text-zinc-400"
+            className="flex gap-3 sm:gap-6 md:gap-8 text-xs sm:text-sm font-medium text-zinc-400"
           >
             <a href="#about" className="hover:text-white transition-colors">
               About
@@ -146,17 +146,18 @@ export default function App() {
       </nav>
 
       {/* HERO SECTION */}
-      <main className="max-w-7xl mx-auto px-6 pt-32 pb-24">
+      <main className="max-w-7xl mx-auto px-4 md:px-6 pt-28 md:pt-32 pb-24">
         <motion.section
           style={{ opacity, scale }}
-          className="min-h-[80vh] flex items-center relative"
+          className="min-h-screen md:min-h-[80vh] flex items-center relative py-10 md:py-0"
         >
-          <div className="w-full grid md:grid-cols-2 gap-2 items-center">
+          <div className="w-full grid md:grid-cols-2 gap-12 md:gap-6 items-center">
             {/* LEFT SIDE - TEXT */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
+              className="text-center md:text-left flex flex-col items-center md:items-start"
             >
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-card border-white/10 text-xs font-mono text-blue-400 mb-8">
                 <span className="relative flex h-2 w-2">
@@ -166,20 +167,20 @@ export default function App() {
                 Available for new opportunities
               </div>
 
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tighter mb-6 leading-[1.1]">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tighter mb-6 leading-[1.1]">
                 Hello I'm <br />
                 <span className="text-gradient-accent">
                   Miguel Raphael Layos
                 </span>
               </h1>
 
-              <p className="text-xl text-zinc-400 max-w-xl leading-relaxed mb-10">
+              <p className="text-lg md:text-xl text-zinc-400 max-w-xl leading-relaxed mb-10">
                 I build scalable intelligent systems, bridging the gap between
                 cutting-edge machine learning models and robust production
                 environments.
               </p>
 
-              <div className="flex gap-4">
+              <div className="flex flex-wrap justify-center md:justify-start gap-4">
                 <a
                   href="#contact"
                   className="px-6 py-3 rounded-lg bg-white text-black font-medium hover:bg-zinc-200 transition-colors flex items-center gap-2"
@@ -214,9 +215,9 @@ export default function App() {
               initial={{ opacity: 0, x: 40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7 }}
-              className="flex justify-center md:justify-end"
+              className="flex justify-center md:justify-end mt-8 md:mt-0"
             >
-              <div className="relative w-80 h-80 md:w-[420px] md:h-[420px] lg:w-[500px] lg:h-[500px]">
+              <div className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-[420px] md:h-[420px] lg:w-[500px] lg:h-[500px]">
                 {/* Optional soft glow background */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-500 to-purple-500 blur-3xl opacity-20 rounded-3xl"></div>
 
