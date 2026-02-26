@@ -434,13 +434,12 @@ export default function App() {
               </motion.div>
             ))}
           </div>
+    
         </section>
 
-        {/* Experience Section */}
+        {/*  Section */}
         <section id="experience" className="py-24 border-t border-white/5">
           <h2 className="text-3xl font-bold mb-12">Experience</h2>
-
-
             {/* Role 1 */}
             <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
               <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-zinc-900 text-zinc-600 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
@@ -486,7 +485,6 @@ export default function App() {
                 </p>
               </div>
             </div>
-          </div>
         </section>
       </main>
 
