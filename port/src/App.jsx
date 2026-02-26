@@ -57,18 +57,18 @@ const researchData = [
   {
     id: 1,
     title: "QUBO: A Retrieval-Augmented Generation Philippine History Chatbot",
-    venue: "Undergraduate Research",
+    venue: "Undergraduate Thesis",
     date: "2024",
     desc: "Explored the application of Retrieval-Augmented Generation (RAG) to improve the accuracy and contextual relevance of conversational AI in the domain of Philippine history.",
-    link: "#"
+    link: "https://github.com/Jhin2003/research_papers/blob/main/Qubo.pdf"
   },
   {
     id: 2,
     title: "Statistical Analysis of Personal Dota 2 Match_Performance",
     venue: "Machine Learning Journal",
     date: "2023",
-    desc: "Proposed an automated pipeline for extracting complex layouts and handwritten notes from unstructured documents using optimized vision transformers.",
-    link: "#"
+    desc: "Analyzed a dataset of personal Dota 2 match performance using statistical methods to identify key factors influencing player success and performance trends over time.",
+    link: "https://github.com/Jhin2003/research_papers/blob/main/Statistical_Analysis_of_Personal_Dota_2_Match_Performance.pdf"
   },
 
   {
@@ -76,7 +76,7 @@ const researchData = [
     title: "Deep Learning-Based Recognition and Detection of the Filipino Sign Language Alphabet",
     venue: "Machine Learning Journal",
     date: "2023",
-    desc: "Proposed an automated pipeline for extracting complex layouts and handwritten notes from unstructured documents using optimized vision transformers.",
+    desc: "This research paper presents a deep learning-based approach for the recognition and detection of the Filipino Sign Language (FSL) alphabet. The study utilizes convolutional neural networks (CNNs) to classify hand gestures corresponding to the FSL alphabet, achieving high accuracy and demonstrating the potential for improving communication accessibility for the deaf community in the Philippines.",
     link: "https://github.com/Jhin2003/research_papers/blob/main/Deep%20Learning-Based%20Recognition%20and%20Detection%20of%20the%20Filipino%20Sign%20Language%20Alphabet.pdf"
   }
 ];
