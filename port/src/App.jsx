@@ -58,7 +58,7 @@ const researchData = [
     id: 1,
     title: "QUBO: A Retrieval-Augmented Generation Philippine History Chatbot",
     venue: "Undergraduate Thesis",
-    date: "2024",
+    date: "2026",
     desc: "Explored the application of Retrieval-Augmented Generation (RAG) to improve the accuracy and contextual relevance of conversational AI in the domain of Philippine history.",
     link: "https://github.com/Jhin2003/research_papers/blob/main/Qubo.pdf"
   },
@@ -66,7 +66,7 @@ const researchData = [
     id: 2,
     title: "Statistical Analysis of Personal Dota 2 Match_Performance",
     venue: "Machine Learning Journal",
-    date: "2023",
+    date: "2026",
     desc: "Analyzed a dataset of personal Dota 2 match performance using statistical methods to identify key factors influencing player success and performance trends over time.",
     link: "https://github.com/Jhin2003/research_papers/blob/main/Statistical_Analysis_of_Personal_Dota_2_Match_Performance.pdf"
   },
@@ -75,7 +75,7 @@ const researchData = [
     id: 3,
     title: "Deep Learning-Based Recognition and Detection of the Filipino Sign Language Alphabet",
     venue: "Machine Learning Journal",
-    date: "2023",
+    date: "2025",
     desc: "This research paper presents a deep learning-based approach for the recognition and detection of the Filipino Sign Language (FSL) alphabet. The study utilizes convolutional neural networks (CNNs) to classify hand gestures corresponding to the FSL alphabet, achieving high accuracy and demonstrating the potential for improving communication accessibility for the deaf community in the Philippines.",
     link: "https://github.com/Jhin2003/research_papers/blob/main/Deep%20Learning-Based%20Recognition%20and%20Detection%20of%20the%20Filipino%20Sign%20Language%20Alphabet.pdf"
   }
@@ -245,17 +245,17 @@ export default function App() {
           <div className="grid md:grid-cols-2 gap-16">
             <div>
               <h2 className="text-3xl font-bold mb-6">
-                Engineering intelligence.
+                About Me
               </h2>
               <p className="text-zinc-400 leading-relaxed mb-6">
-                With a background in both traditional software engineering and
-                machine learning, I specialize in taking AI from research
-                notebooks to production-ready applications.
+                A software engineering and machine learning enthusiast with a passion for building intelligent systems and solving real-world problems through code.
+
+              I am currently studying Computer Science with a specialization in Machine Learning at National University, where I explore algorithms, data-driven solutions, and modern software development practices.
+
+  
               </p>
               <p className="text-zinc-400 leading-relaxed">
-                I focus on performance, architecture, and user experience,
-                ensuring that AI features feel like magic rather than science
-                experiments.
+               I enjoy building projects that combine theory and practice. My goal is to continuously learn and improve, turning ideas into functional and meaningful applications.
               </p>
             </div>
 
@@ -477,15 +477,14 @@ export default function App() {
                 
                   </h3>
                   <span className="text-xs font-mono text-zinc-500">
-                    2021 - 2023
+                    2022 - present
                   </span>
                 </div>
                 <div className="text-zinc-300 text-sm font-medium mb-4">
                 
                 </div>
                 <p className="text-sm text-zinc-400 leading-relaxed">
-                  Built scalable web applications using React and Node.js.
-                  Integrated early OpenAI APIs into core product features.
+                  Studied Computer Science at National University, specializing in Machine Learning.
                 </p>
               </div>
             </div>
@@ -501,15 +500,14 @@ export default function App() {
                     
                   </h3>
                   <span className="text-xs font-mono text-zinc-500">
-                    2019 - 2021
+                    2020 - 2022
                   </span>
                 </div>
                 <div className="text-zinc-300 text-sm font-medium mb-4">
                  
                 </div>
                 <p className="text-sm text-zinc-400 leading-relaxed">
-                  Developed high-performance marketing sites and interactive web
-                  experiences for enterprise clients.
+                  Started ABM Strand in senior high school at La Salle College Antipolo.
                 </p>
               </div>
             </div>
@@ -616,13 +614,13 @@ export default function App() {
               href="mailto:hello@example.com"
               className="px-5 py-2.5 rounded-full bg-blue-500 text-white text-sm font-medium hover:bg-blue-600 transition-colors"
             >
-              hello@example.com
+              layosmiguelraphael@gmail.com
             </a>
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-6 py-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-mono text-zinc-600">
           <p>
-            © {new Date().getFullYear()} AI Software Engineer. All rights
+            © {new Date().getFullYear()} Miguel Raphael Layos. All rights
             reserved.
           </p>
           <div className="flex gap-4">
@@ -633,7 +631,7 @@ export default function App() {
               LinkedIn
             </a>
             <a href="#" className="hover:text-zinc-300 transition-colors">
-              Twitter
+              Instagram
             </a>
           </div>
         </div>
