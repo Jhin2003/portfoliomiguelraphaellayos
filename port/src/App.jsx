@@ -13,73 +13,7 @@ import {
   FileText,
 } from "lucide-react";
 import { useState, useEffect } from "react";
-
-const projectsData = [
-  {
-    id: 1,
-    title: "QUBO: A Retrieval-Augmented Generation Philippine History Chatbot",
-    shortDesc:
-      "A collaborative whiteboard powered by generative AI. Sketch rough ideas and watch them transform into high-fidelity designs in real-time.",
-    fullDesc:
-      "Neural Canvas is a next-generation collaborative whiteboard that leverages generative AI to enhance the design process. Users can sketch rough wireframes or ideas, and the AI instantly transforms them into high-fidelity, production-ready designs. It features real-time multiplayer collaboration, version history, and export capabilities to popular design tools. Built with Next.js, OpenAI's latest vision models, and WebSockets for seamless real-time syncing.",
-    image: "/QUBO.png",
-    tags: ["Next.js", "OpenAI", "WebSockets", "Tailwind CSS"],
-    link: "https://example.com/neural-canvas",
-    github: "https://github.com",
-  },
-  {
-    id: 2,
-    title: "FSLEARN",
-    shortDesc:
-      "An automated data extraction pipeline using custom fine-tuned vision models to process complex unstructured documents at scale.",
-    fullDesc:
-      "Visionary Data solves the problem of unstructured document processing at an enterprise scale. By utilizing custom fine-tuned vision models (based on PyTorch), it can accurately extract tables, handwritten notes, and complex layouts from PDFs and images. The pipeline is fully automated, highly scalable, and includes a human-in-the-loop verification dashboard built with React.",
-    image: "https://picsum.photos/seed/ai2/800/450?blur=2",
-    tags: ["Python", "PyTorch", "FastAPI", "React"],
-    link: "https://example.com/visionary-data",
-    github: "https://github.com/Jhin2003/FSLEARN",
-  },
-  {
-    id: 3,
-    title: "NU MARKETPLACE MANILA",
-    shortDesc:
-      "A real-time voice and video assistant leveraging the Gemini Live API. Features ultra-low latency streaming and visual context understanding.",
-    fullDesc:
-      "Echo is a cutting-edge real-time voice and video assistant built on top of the Gemini Live API. It achieves ultra-low latency streaming, allowing for natural, interruptible conversations. The assistant can also 'see' through the user's camera, providing contextual help based on the user's environment. The frontend is built with React and WebRTC, ensuring robust peer-to-peer connections and high-quality media streaming.",
-    image: "https://picsum.photos/seed/ai3/800/450?blur=2",
-    tags: ["React", "WebRTC", "Gemini API", "Node.js"],
-    link: "https://example.com/echo-ai",
-    github: "https://github.com",
-  },
-];
-
-const researchData = [
-  {
-    id: 1,
-    title: "QUBO: A Retrieval-Augmented Generation Philippine History Chatbot",
-    venue: "Undergraduate Thesis",
-    date: "2026",
-    desc: "Explored the application of Retrieval-Augmented Generation (RAG) to improve the accuracy and contextual relevance of conversational AI in the domain of Philippine history.",
-    link: "https://github.com/Jhin2003/research_papers/blob/main/Qubo.pdf"
-  },
-  {
-    id: 2,
-    title: "Statistical Analysis of Personal Dota 2 Match_Performance",
-    venue: "Machine Learning Journal",
-    date: "2026",
-    desc: "Analyzed a dataset of personal Dota 2 match performance using statistical methods to identify key factors influencing player success and performance trends over time.",
-    link: "https://github.com/Jhin2003/research_papers/blob/main/Statistical_Analysis_of_Personal_Dota_2_Match_Performance.pdf"
-  },
-
-  {
-    id: 3,
-    title: "Deep Learning-Based Recognition and Detection of the Filipino Sign Language Alphabet",
-    venue: "Machine Learning Journal",
-    date: "2025",
-    desc: "This research paper presents a deep learning-based approach for the recognition and detection of the Filipino Sign Language (FSL) alphabet. The study utilizes convolutional neural networks (CNNs) to classify hand gestures corresponding to the FSL alphabet, achieving high accuracy and demonstrating the potential for improving communication accessibility for the deaf community in the Philippines.",
-    link: "https://github.com/Jhin2003/research_papers/blob/main/Deep%20Learning-Based%20Recognition%20and%20Detection%20of%20the%20Filipino%20Sign%20Language%20Alphabet.pdf"
-  }
-];
+import { projectsData, researchData, experienceData } from "./data";
 
 export default function App() {
   const { scrollYProgress } = useScroll();
@@ -244,18 +178,19 @@ export default function App() {
         <section id="about" className="py-24 border-t border-white/5">
           <div className="grid md:grid-cols-2 gap-16">
             <div>
-              <h2 className="text-3xl font-bold mb-6">
-                About Me
-              </h2>
+              <h2 className="text-3xl font-bold mb-6">About Me</h2>
               <p className="text-zinc-400 leading-relaxed mb-6">
-                A software engineering and machine learning enthusiast with a passion for building intelligent systems and solving real-world problems through code.
-
-              I am currently studying Computer Science with a specialization in Machine Learning at National University, where I explore algorithms, data-driven solutions, and modern software development practices.
-
-  
+                A software engineering and machine learning enthusiast with a
+                passion for building intelligent systems and solving real-world
+                problems through code. I am currently studying Computer Science
+                with a specialization in Machine Learning at National
+                University, where I explore algorithms, data-driven solutions,
+                and modern software development practices.
               </p>
               <p className="text-zinc-400 leading-relaxed">
-               I enjoy building projects that combine theory and practice. My goal is to continuously learn and improve, turning ideas into functional and meaningful applications.
+                I enjoy building projects that combine theory and practice. My
+                goal is to continuously learn and improve, turning ideas into
+                functional and meaningful applications.
               </p>
             </div>
 
@@ -436,83 +371,37 @@ export default function App() {
           </div>
         </section>
 
-        {/* Experience Section */}
-        <section id="experience" className="py-24 border-t border-white/5">
-          <h2 className="text-3xl font-bold mb-12">Experience</h2>
-
-          <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-white/10 before:to-transparent">
-            {/* Role 1 */}
-            <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+        <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-white/10 before:to-transparent">
+          {experienceData.map((exp, index) => (
+            <div
+              key={exp.id}
+              className={`relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group ${
+                exp.active ? "is-active" : ""
+              }`}
+            >
               <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-zinc-900 text-zinc-500 group-[.is-active]:text-blue-400 group-[.is-active]:border-blue-500/30 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                 <div className="w-2 h-2 rounded-full bg-current"></div>
               </div>
+
               <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-6 rounded-2xl">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
-                  <h3 className="text-lg font-bold text-white">
-                   
-                  </h3>
+                  <h3 className="text-lg font-bold text-white">{exp.title}</h3>
                   <span className="text-xs font-mono text-zinc-500">
-                    2023 - Present
+                    {exp.date}
                   </span>
                 </div>
+
                 <div className="text-blue-400 text-sm font-medium mb-4">
-                 
+                  {exp.company}
                 </div>
-                <p className="text-sm text-zinc-400 leading-relaxed">
-                  Leading the development of internal LLM tools. Architected a
-                  RAG pipeline that reduced customer support resolution time by
-                  40%.
-                </p>
-              </div>
-            </div>
 
-            {/* Role 2 */}
-            <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-zinc-900 text-zinc-600 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
-                <div className="w-2 h-2 rounded-full bg-current"></div>
-              </div>
-              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-6 rounded-2xl opacity-80 hover:opacity-100 transition-opacity">
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
-                  <h3 className="text-lg font-bold text-white">
-                
-                  </h3>
-                  <span className="text-xs font-mono text-zinc-500">
-                    2022 - present
-                  </span>
-                </div>
-                <div className="text-zinc-300 text-sm font-medium mb-4">
-                
-                </div>
                 <p className="text-sm text-zinc-400 leading-relaxed">
-                  Studied Computer Science at National University, specializing in Machine Learning.
+                  {exp.description}
                 </p>
               </div>
             </div>
-
-            {/* Role 3 */}
-            <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-zinc-900 text-zinc-600 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
-                <div className="w-2 h-2 rounded-full bg-current"></div>
-              </div>
-              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-6 rounded-2xl opacity-80 hover:opacity-100 transition-opacity">
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
-                  <h3 className="text-lg font-bold text-white">
-                    
-                  </h3>
-                  <span className="text-xs font-mono text-zinc-500">
-                    2020 - 2022
-                  </span>
-                </div>
-                <div className="text-zinc-300 text-sm font-medium mb-4">
-                 
-                </div>
-                <p className="text-sm text-zinc-400 leading-relaxed">
-                  Started ABM Strand in senior high school at La Salle College Antipolo.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+          ))}
+        </div>
       </main>
 
       {/* Project Modal */}
@@ -530,16 +419,16 @@ export default function App() {
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.95, opacity: 0, y: 20 }}
               onClick={(e) => e.stopPropagation()}
-              className="w-full max-w-4xl max-h-[90vh] overflow-y-auto glass-card rounded-3xl p-6 sm:p-10 relative"
+             className="w-full max-w-4xl max-h-[90vh] overflow-y-auto glass-card rounded-3xl p-8 sm:p-10 pt-14 relative"
             >
               <button
                 onClick={() => setSelectedProject(null)}
-                className="absolute top-6 right-6 p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors z-10"
+                className="absolute top-4 right-4 p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors z-10"
               >
                 <X size={20} />
               </button>
 
-              <div className="aspect-video rounded-2xl overflow-hidden mb-8 relative">
+              <div className="rounded-2xl overflow-hidden mb-8 relative mt-6">
                 <img
                   src={selectedProject.image}
                   alt={selectedProject.title}
