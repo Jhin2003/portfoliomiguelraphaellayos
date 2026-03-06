@@ -69,11 +69,11 @@ export const researchData = [
 export const experienceData = [
   {
     id: 1,
-    title: "AI Engineer Intern",
-    company: "Example Company",
-    date: "2023 - Present",
+    title: "Internship",
+    company: "s",
+    date: "2026 - Present",
     description:
-      "Leading the development of internal LLM tools. Architected a RAG pipeline that reduced customer support resolution time by 40%.",
+      "--",
     active: true,
   },
   {
