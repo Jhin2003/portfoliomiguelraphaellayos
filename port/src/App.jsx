@@ -244,7 +244,7 @@ export default function App() {
 
         {/* Projects Section */}
         <section id="projects" className="py-24 border-t border-white/5">
-          <h2 className="text-3xl font-bold mb-12">Selected Work</h2>
+          <h2 className="text-3xl font-bold mb-12">Projects</h2>
 
           <div className="grid md:grid-cols-2 gap-6">
             {projectsData.map((project, index) => (
@@ -371,7 +371,10 @@ export default function App() {
           </div>
         </section>
 
+        {/* Experience Section */}
+        
         <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-white/10 before:to-transparent">
+          <h2 className="text-3xl font-bold mb-12">Experience</h2>
           {experienceData.map((exp, index) => (
             <div
               key={exp.id}
